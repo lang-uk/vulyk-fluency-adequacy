@@ -1,0 +1,56 @@
+<div>
+    <p class="lead" id="out"></p>
+</div>
+
+<script id="judgeme_template" type="text/x-handlebars-template">
+    {% raw %}
+    <div class="panel-heading mark-errors"><strong>Evaluate Translation</strong></div>
+    <div class="panel-body">
+        <div id="fluency-stage">
+            <h4>Stage 1: Fluency Evaluation</h4>
+            <p class="stage-instruction">Rate on a 0–100 scale the extent to which the translation is well-formed grammatically, contains correct spellings, adheres to common use of terms, titles, and names, is intuitively acceptable, and can be sensibly interpreted by a native speaker.</p>
+            <p class="sample-text mark-errors"><strong>Ukrainian:</strong> <span>{{uk}}</span></p>
+            <hr />
+
+            <label>Rate fluency (0-100): <span id="current-fluency-score"></span></label>
+            <div class="slider-container">
+                <input type="range" id="fluency-slider" class="slider fluency-gradient" min="0" max="100" value="50">
+                <div class="slider-labels" data-toggle="tooltip" data-html="true" title="
+    <p style='text-align: left;'>
+    <strong>0-25:</strong> Incomprehensible<br/>
+    <strong>25-50:</strong> Disfluent<br/>
+    <strong>50-75:</strong> Good<br/>
+    <strong>75-100:</strong> Flawless</p>" data-placement="bottom">
+                    <span class="legend-labels">
+                        <span>0</span><span>25</span><span>50</span><span>75</span><span>100</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div id="adequacy-stage" style="display: none;">
+            <hr />
+            <h4>Stage 2: Adequacy Evaluation</h4>
+            <p class="stage-instruction">How much of the meaning expressed in the source text is also expressed in the target translation?</p>
+            <p class="sample-text mark-errors"><strong>English:</strong> <span>{{en}}</span></p>
+            <p class="sample-text mark-errors"><strong>Ukrainian:</strong> <span>{{uk}}</span></p>
+            <hr />
+
+            <label>Rate adequacy (0-100): <span id="current-adequacy-score"></span></label>
+            <div class="slider-container">
+                <input type="range" id="adequacy-slider" class="slider adequacy-gradient" min="0" max="100" value="50">
+                <div class="slider-labels" data-toggle="tooltip" data-html="true" title="
+    <p style='text-align: left;'>
+    <strong>0-25:</strong> None<br/>
+    <strong>25-50:</strong> Little<br/>
+    <strong>50-75:</strong> Most<br/>
+    <strong>75-100:</strong> All</p>" data-placement="bottom">
+                    <span class="legend-labels">
+                        <span>0</span><span>25</span><span>50</span><span>75</span><span>100</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endraw %}
+</script>

@@ -1,0 +1,96 @@
+p.lead {
+    text-align: left;
+}
+
+.btn-group {
+    margin: 15px 0;
+}
+
+.btn-group .btn {
+    min-width: 70px;
+}
+
+.btn-group .btn.active {
+    font-weight: bold;
+}
+
+u {
+    border-bottom-style: dashed;
+    border-width: 1px;
+    text-decoration: none;
+}
+
+.hidden-form {
+    display: none;
+    margin-top: 15px;
+}
+
+p.sample-text strong {
+    min-width: 5em;
+    display: inline-block
+}
+
+.slider-container {
+    margin: 15px 0;
+}
+
+.slider {
+    width: 100%;
+}
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fluency-gradient::-webkit-slider-runnable-track {
+    background: linear-gradient(to right,
+            red 0%, red 25%,
+            orange 25%, orange 50%,
+            green 50%, green 75%,
+            darkgreen 75%, darkgreen 100%);
+    height: 15px;
+}
+
+.adequacy-gradient::-webkit-slider-runnable-track {
+    background: linear-gradient(to right,
+            red 0%, red 25%,
+            orange 25%, orange 50%,
+            green 50%, green 75%,
+            darkgreen 75%, darkgreen 100%);
+    height: 15px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    height: 16px;
+    width: 16px;
+    margin-top: -4px;
+}
+
+.legend-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.legend-labels span {
+    width: 20px;
+    text-align: center;
+}
+
+.legend-labels span:first-child {
+    text-align: left;
+}
+
+.legend-labels span:last-child{
+    text-align: right;
+}
+
+.stage-instruction {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#adequacy-stage {
+    margin-top: 15px;
+}
