@@ -21,7 +21,7 @@ class FluencyAdequacyTaskType(AbstractTaskType):
     helptext_template = "help.html"
     type_name = "fluency_adequacy_task"
 
-    redundancy = 3
+    redundancy = 10
 
     JS_ASSETS = [
         "static/scripts/handlebars.js",
