@@ -39,8 +39,7 @@ p.sample-text strong {
 }
 
 .slider-labels {
-    display: flex;
-    justify-content: space-between;
+    display: block;
 }
 
 .fluency-gradient::-webkit-slider-runnable-track {
@@ -83,6 +82,19 @@ input[type="range"]::-webkit-slider-thumb {
 
 .legend-labels span:last-child{
     text-align: right;
+}
+
+.descriptor-labels {
+    display: flex;
+    width: 100%;
+    margin-top: 2px;
+}
+
+.descriptor-labels span {
+    flex: 1;
+    text-align: center;
+    font-size: 0.8em;
+    color: #888;
 }
 
 .stage-instruction {
